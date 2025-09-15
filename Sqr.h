@@ -38,6 +38,15 @@
 
 namespace Storage_B
 {
+  /**
+   * Computes the square of a given value.
+   *
+   * This method calculates the square of the input value and returns the result.
+   * It assumes a generic type T that supports the multiplication operation.
+   *
+   * @param x The value to be squared.
+   * @return The square of the input value as a value of type T.
+   */
   template <class T> inline T Sqr(T x)
   {
     return x * x;

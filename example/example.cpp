@@ -13,8 +13,8 @@ int main()
   std::cout << "c = " << Hypot(3.0, 4.0, 0.5) << '\n';
   std::cout << "c = " << Hypot(3.0, 4.0, 12.0) << '\n';
 
-  std::complex<double> z1 = 3.0 + 0.001i;
-  std::complex<double> z2 = 4.0 - 0.001i;
+  const std::complex<double> z1 = 3.0 + 0.001i;
+  const std::complex<double> z2 = 4.0 - 0.001i;
 
   std::cout << "c = " << Hypot(z1, z2) << '\n';
 

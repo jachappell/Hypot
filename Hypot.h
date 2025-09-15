@@ -42,12 +42,33 @@
 
 namespace Storage_B
 {
+  /**
+   * Computes the hypotenuse of a right triangle given the lengths of its two perpendicular sides.
+   *
+   * The method calculates the square root of the sum of the squares of the two input values.
+   * It assumes a generic type T that supports the required arithmetic operations.
+   *
+   * @param x The length of one perpendicular side of the triangle.
+   * @param y The length of the other perpendicular side of the triangle.
+   * @return The length of the hypotenuse as a value of type T.
+   */
   template <class T> inline T Hypot(T x, T y)
   {
     return std::sqrt(Sqr(x) + Sqr(y));
   }
 
-  template <class T> inline T Hypot(T x, T y, T z)
+  /**
+   * Computes the hypotenuse of a right triangle in three dimensions given the lengths of its three perpendicular sides.
+   *
+   * This method calculates the square root of the sum of the squares of the three input values.
+   * It assumes a generic type T that supports the required arithmetic operations, such as squaring and square root.
+   *
+   * @param x The length of the first perpendicular side.
+   * @param y The length of the second perpendicular side.
+   * @param z The length of the third perpendicular side.
+   * @return The length of the three-dimensional hypotenuse as a value of type T.
+   */
+   template <class T> inline T Hypot(T x, T y, T z)
   {
     return std::sqrt(Sqr(x) + Sqr(y) + Sqr(z));
   }

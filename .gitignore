@@ -27,7 +27,7 @@
 *.exe
 *.out
 *.app
-example
+hypot
 test
 
 # vim
